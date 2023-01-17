@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: $main-fonts
 }
-html, body {
+html, body{
     height: 100%;
     background-color: $color-secondary;
 }
@@ -43,5 +43,79 @@ header {
 }
 main {
     background-color: $color-secondary;
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .about {
+        margin: 0 $margin-edge * 2;
+        width: 50%;
+        .about-border {
+            height: 400px;
+            width: 500px;
+            h2 {
+                color: $color-accent;
+                font-weight: 100;
+                border-bottom: 2px solid $color-accent;
+                width: 80px;
+                margin-bottom: 20px;
+            }
+            p {
+                color: $color-accent;
+                font-weight: 100;
+                font-size: 1.3em;
+            }
+        }
+        
+    }
+    .image {
+        @extend .about;
+        display: flex;
+        justify-content: flex-end;
+        .image-border {
+            background-image: url(../images/IMG_3967.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            border: 1px solid $color-accent;
+            border-radius: 50px;
+            height: 450px;
+            width: 350px;
+        }
+        
+    }
+}
+footer {
+    height: fit-content;
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    #socials {
+        background-color: $color-footer;
+        border-radius: 30px;
+        box-shadow: 10px 10px 20px gray;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px;
+        #github {
+            @include socials;
+            background-image: url(../images/github.png);
+        }
+        #linkedin {
+            @include socials;
+            background-image: url(../images/Linkedin.png);
+        }
+        #codewars {
+            @include socials;
+            background-image: url(../images/codewars.png);
+        }
+        #freecodecamp {
+            @include socials;
+            background-image: url(../images/freecodecamp.png);
+        }
+    }
 }

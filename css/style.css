@@ -41,5 +41,103 @@ header nav a {
 
 main {
   background-color: #E7E5D9;
-  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .about, main .image {
+  margin: 0 80px;
+  width: 50%;
+}
+main .about .about-border, main .image .about-border {
+  height: 400px;
+  width: 500px;
+}
+main .about .about-border h2, main .image .about-border h2 {
+  color: #5E5946;
+  font-weight: 100;
+  border-bottom: 2px solid #5E5946;
+  width: 80px;
+  margin-bottom: 20px;
+}
+main .about .about-border p, main .image .about-border p {
+  color: #5E5946;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+main .image {
+  display: flex;
+  justify-content: flex-end;
+}
+main .image .image-border {
+  background-image: url(../images/IMG_3967.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid #5E5946;
+  border-radius: 50px;
+  height: 450px;
+  width: 350px;
+}
+
+footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer #socials {
+  background-color: #C3C1AB;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px gray;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+}
+footer #socials #github {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../images/github.png);
+}
+footer #socials #linkedin {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../images/Linkedin.png);
+}
+footer #socials #codewars {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../images/codewars.png);
+}
+footer #socials #freecodecamp {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url(../images/freecodecamp.png);
 }/*# sourceMappingURL=style.css.map */
