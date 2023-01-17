@@ -20,7 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid $color-accent;
+    border-bottom: 1px solid $color-accent;
     margin-bottom: 80px;
     h1 {
         font-weight: 100;
@@ -39,12 +39,17 @@ header {
             color: $color-accent;
 
         }
+        a:hover {
+            color: black;
+        }
     }
 }
 main {
     background-color: $color-secondary;
+    min-height: 60%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     .about {
         height: 400px;
         width: 600px;
@@ -76,8 +81,7 @@ footer {
     height: fit-content;
     width: 100%;
     padding: 20px 0;
-    position: absolute;
-    bottom: 0;
+    
     width: 100%;
     display: flex;
     justify-content: center;

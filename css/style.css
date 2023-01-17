@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #5E5946;
+  border-bottom: 1px solid #5E5946;
   margin-bottom: 80px;
 }
 header h1 {
@@ -38,11 +38,16 @@ header nav a {
   text-decoration: none;
   color: #5E5946;
 }
+header nav a:hover {
+  color: black;
+}
 
 main {
   background-color: #E7E5D9;
+  min-height: 60%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 main .about {
   height: 400px;
@@ -77,8 +82,6 @@ footer {
   height: fit-content;
   width: 100%;
   padding: 20px 0;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
