@@ -2,6 +2,12 @@
         height: 50px;
         width: 50px;
         margin: 20px;
+        transition: transform .2s;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;}
+
+@mixin socialsAction {
+        cursor: pointer;
+        transform: scale(1.2);
+}

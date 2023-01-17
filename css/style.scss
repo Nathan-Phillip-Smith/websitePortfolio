@@ -44,43 +44,32 @@ header {
 main {
     background-color: $color-secondary;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     .about {
-        margin: 0 $margin-edge * 2;
-        width: 50%;
-        .about-border {
-            height: 400px;
-            width: 500px;
-            h2 {
-                color: $color-accent;
-                font-weight: 100;
-                border-bottom: 2px solid $color-accent;
-                width: 80px;
-                margin-bottom: 20px;
-            }
-            p {
-                color: $color-accent;
-                font-weight: 100;
-                font-size: 1.3em;
-            }
+        height: 400px;
+        width: 600px;
+        h2 {
+            color: $color-accent;
+            font-weight: 100;
+            border-bottom: 2px solid $color-accent;
+            width: 80px;
+            margin-bottom: 20px;
         }
-        
+        p {
+            color: $color-accent;
+            font-weight: 100;
+            font-size: 1.3em;
+        }
     }
     .image {
-        @extend .about;
-        display: flex;
-        justify-content: flex-end;
-        .image-border {
-            background-image: url(../images/IMG_3967.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            border: 1px solid $color-accent;
-            border-radius: 50px;
-            height: 450px;
-            width: 350px;
-        }
-        
+        background-image: url(../images/IMG_3967.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border: 1px solid $color-accent;
+        border-radius: 50px;
+        height: 450px;
+        width: 350px;
     }
 }
 footer {
@@ -105,17 +94,29 @@ footer {
             @include socials;
             background-image: url(../images/github.png);
         }
+        #github:hover {
+            @include socialsAction
+        }
         #linkedin {
             @include socials;
             background-image: url(../images/Linkedin.png);
+        }
+        #linkedin:hover {
+            @include socialsAction
         }
         #codewars {
             @include socials;
             background-image: url(../images/codewars.png);
         }
+        #codewars:hover {
+            @include socialsAction
+        }
         #freecodecamp {
             @include socials;
             background-image: url(../images/freecodecamp.png);
+        }
+        #freecodecamp:hover {
+            @include socialsAction
         }
     }
 }
