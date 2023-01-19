@@ -15,17 +15,17 @@ html, body{
 header {
     height: fit-content;
     width: 100%;
-    padding: 20px 0;
     background-color: $color-primary;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid $color-accent;
-    margin-bottom: 80px;
-    h1 {
-        font-weight: 100;
-        color: $color-accent;
-        margin-left: $margin-edge * 2;
+    margin-bottom: 120px;
+    img {
+        height: 80px;
+        width: 300px;
+        object-fit: cover;
+        margin-left: $margin-edge;
         a {
             text-decoration: none;
             color: $color-accent;
@@ -51,44 +51,44 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     .about {
-        height: 400px;
-        width: 600px;
-        h2 {
+        height: 300px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        h1 {
             color: $color-accent;
             font-weight: 100;
-            border-bottom: 2px solid $color-accent;
-            width: 80px;
-            margin-bottom: 20px;
+            
         }
-        p {
+        h2 {
             color: $color-accent;
             font-weight: 100;
             font-size: 1.3em;
         }
     }
     .image {
-        background-image: url(../images/IMG_3967.jpg);
+        background-image: url(../images/DALL·E\ 2023-01-18\ 17.05.36\ -\ a\ 3d\ animated\ cozy\ minimalistic\ computer\ desk\ with\ cool\ earthy\ colors.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        border: 1px solid $color-accent;
         border-radius: 50px;
-        height: 450px;
-        width: 350px;
+        height: 300px;
+        width: 400px;
     }
 }
 footer {
     height: fit-content;
     width: 100%;
     padding: 20px 0;
-    
     width: 100%;
     display: flex;
     justify-content: center;
     #socials {
         background-color: $color-footer;
         border-radius: 30px;
-        box-shadow: 10px 10px 20px gray;
+        box-shadow: 10px 10px 20px $color-accent;
         height: fit-content;
         width: fit-content;
         display: flex;

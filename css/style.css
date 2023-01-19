@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +8,7 @@
 
 html, body {
   height: 100%;
-  background-color: #E7E5D9;
+  background-color: #668977;
 }
 
 header {
@@ -15,65 +16,65 @@ header {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
-  padding: 20px 0;
-  background-color: #F0DED0;
+  background-color: #E0D3B0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #5E5946;
-  margin-bottom: 80px;
+  border-bottom: 1px solid #03292C;
+  margin-bottom: 120px;
 }
-header h1 {
-  font-weight: 100;
-  color: #5E5946;
-  margin-left: 80px;
+header img {
+  height: 80px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 40px;
 }
-header h1 a {
+header img a {
   text-decoration: none;
-  color: #5E5946;
+  color: #03292C;
 }
 header nav a {
   margin-right: 40px;
   font-weight: 100;
   text-decoration: none;
-  color: #5E5946;
+  color: #03292C;
 }
 header nav a:hover {
   color: black;
 }
 
 main {
-  background-color: #E7E5D9;
+  background-color: #668977;
   min-height: 60%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 main .about {
-  height: 400px;
-  width: 600px;
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .about h1 {
+  color: #03292C;
+  font-weight: 100;
 }
 main .about h2 {
-  color: #5E5946;
-  font-weight: 100;
-  border-bottom: 2px solid #5E5946;
-  width: 80px;
-  margin-bottom: 20px;
-}
-main .about p {
-  color: #5E5946;
+  color: #03292C;
   font-weight: 100;
   font-size: 1.3em;
 }
 main .image {
-  background-image: url(../images/IMG_3967.jpg);
+  background-image: url(../images/DALL·E\ 2023-01-18\ 17.05.36\ -\ a\ 3d\ animated\ cozy\ minimalistic\ computer\ desk\ with\ cool\ earthy\ colors.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  border: 1px solid #5E5946;
   border-radius: 50px;
-  height: 450px;
-  width: 350px;
+  height: 300px;
+  width: 400px;
 }
 
 footer {
@@ -87,9 +88,9 @@ footer {
   justify-content: center;
 }
 footer #socials {
-  background-color: #C3C1AB;
+  background-color: #ABB8A0;
   border-radius: 30px;
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 10px 10px 20px #03292C;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
